@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitt Sebastian Marca - HTML Project Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skill-item {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 5px;
+            border-left: 4px solid #667eea;
+        }
+
+        .skill-item h3 {
+            color: #764ba2;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .contact-item {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .contact-item a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kitt Sebastian G. Marca</h1>
+        <p>BS Information Technology Student | Web & Mobile App Developer</p>
+    </header>
+
+    <div class="container">
+        <!-- About Me Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Kitt Sebastian G. Marca is an 18-year-old student currently pursuing a Bachelor of Science in Information Technology at Manuel S. Enverga University Foundation, specializing in Web and Mobile Application Development.
+            </p>
+            <p style="margin-top: 1rem;">
+                He is passionate about developing responsive websites and mobile applications, with growing skills in HTML, CSS, JavaScript, and mobile frameworks. He is committed to continuous learning in the field of software development and aims to become a full-stack developer capable of delivering innovative digital solutions.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skill Overview</h2>
+            
+            <div style="margin-top: 2rem;">
+                <h3 style="color: #764ba2; font-size: 1.5rem; margin-bottom: 1rem;">🔧 Technical Skills</h3>
+                <ul style="list-style-position: inside; margin-left: 1rem; line-height: 2;">
+                    <li><strong>Programming Languages:</strong> Java, Python</li>
+                    <li><strong>Web Technologies:</strong> HTML, CSS</li>
+                </ul>
+            </div>
+
+            <div style="margin-top: 2rem;">
+                <h3 style="color: #764ba2; font-size: 1.5rem; margin-bottom: 1rem;">🤝 Soft Skills</h3>
+                <p style="margin-bottom: 1rem;">
+                    I take a strategic approach to problems, fusing creativity and logical reasoning to find workable, efficient answers. Whether it's deconstructing intricate issues, seeing trends, or streamlining procedures, I work best in situations that call for careful consideration and quick action.
+                </p>
+                <p style="margin-bottom: 1rem;">
+                    I value clarity, empathy, and intention in every interaction. Whether through written content, verbal discussion, or visual presentation, I communicate ideas effectively across diverse teams and audiences.
+                </p>
+                <p>
+                    Capable of bringing concepts to life and producing significant solutions while working in cross-functional, agile teams.
+                </p>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <h2>My Experience</h2>
+            <div style="margin-top: 1.5rem;">
+                <h3 style="color: #764ba2; font-size: 1.3rem; margin-bottom: 0.5rem;">My Web Design Showcase</h3>
+                <p style="color: #666; font-style: italic; margin-bottom: 1rem;">Portfolio of web development projects</p>
+                <p>
+                    A collection of responsive and interactive web designs demonstrating proficiency in HTML, CSS, and modern web development practices. Each project showcases different aspects of front-end development and user interface design.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact & Connect</h2>
+            <p>I'd love to connect with you! Feel free to reach out through any of the following:</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>Email:</strong><br>
+                    <a href="mailto:bastisusi12@gmail.com">bastisusi12@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <strong>GitHub:</strong><br>
+                    <a href="https://github.com/basti008" target="_blank">github.com/basti008</a>
+                </div>
+                <div class="contact-item">
+                    <strong>LinkedIn:</strong><br>
+                    <a href="https://www.linkedin.com/in/kitt-sebastian-marca-a2a51539a/" target="_blank">linkedin.com/in/kitt-sebastian-marca</a>
+                </div>
+            </div>
+            <p style="margin-top: 1.5rem;">
+                Whether you want to discuss a project, share ideas, or just say hello, 
+                I'm always happy to hear from new people!
+            </p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Kitt Sebastian G. Marca. Created with HTML & CSS.</p>
+    </footer>
+</body>
+</html>
